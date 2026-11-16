@@ -192,7 +192,7 @@ main {
 main section {
     margin-bottom: 25px;
     padding: 30px;
-    background-color: rgba(8, 0, 8, 0.88);
+   background-color: rgba(0, 8, 18, 0.65);
     border: 1px solid #45405e;
     border-radius: 12px;
     scroll-margin-top: 25px;
@@ -256,4 +256,34 @@ footer {
 
 footer p {
     margin: 8px 0;
+}
+/* Novo fundo com imagem e pontos de luz */
+#fundo-codigos {
+    background: #050a10 url("imagens/fundo.png") center center / cover no-repeat;
+}
+
+.ponto-luz {
+    position: absolute;
+    border-radius: 50%;
+    background-color: #55dfff;
+    box-shadow: 0 0 8px #00cfff;
+    animation: flutuar 6s ease-in-out infinite alternate;
+}
+
+@keyframes flutuar {
+    from {
+        transform: translateY(0);
+        opacity: 0.25;
+    }
+
+    to {
+        transform: translateY(-25px);
+        opacity: 0.9;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .ponto-luz {
+        animation: none;
+    }
 }
