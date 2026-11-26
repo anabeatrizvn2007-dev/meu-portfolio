@@ -259,7 +259,7 @@ footer p {
 }
 /* Novo fundo com imagem e pontos de luz */
 #fundo-codigos {
-    background: #050a10 url("imagens/fundo.png") center center / cover no-repeat;
+    background: #050a10 url("imagens/fundo_tech.jpg") center center / cover no-repeat;
 }
 
 .ponto-luz {
